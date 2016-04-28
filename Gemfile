@@ -6,6 +6,8 @@ gemspec
 # Load local Gemfile
 load File.expand_path('../Gemfile.local', __FILE__) if File.file? File.expand_path('../Gemfile.local', __FILE__)
 
+gem 'aruba', git: 'https://github.com/cucumber/aruba'
+
 # Debug aruba
 group :debug do
   if RUBY_VERSION >= '2' && !RUBY_PLATFORM.include?('java')
